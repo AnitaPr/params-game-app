@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get "/games", controller: "params", action: "number_games"
 
   get "/url_segment_params/:user_number" => "params#url_segment"
+
+  post "/body_params" => "params#body_params"
 end
